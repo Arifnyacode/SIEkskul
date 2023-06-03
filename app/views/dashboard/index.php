@@ -174,19 +174,19 @@
           
           <ul class="nav nav-treeview">
           <li class="nav-item">
-                  <a href="<?php= BASEURL; ?>/User.php" class="nav-link">
+                  <a href="<?= BASEURL; ?>/User" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>User</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                  <a href="<?php echo(BASEURL); ?>/About" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Siswa</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                  <a href="<?php echo(BASEURL); ?>/Home" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Pelatih</p>
                   </a>
