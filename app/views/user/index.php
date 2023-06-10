@@ -11,12 +11,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Blank Page</h1>
+            <h1>Manage User Page</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Blank Page</li>
+              <li class="breadcrumb-item"><a href="<?=BASEURL;?>/Dashboard">Home</a></li>
+              <li class="breadcrumb-item active">Manage User</li>
             </ol>
           </div>
         </div>
@@ -32,9 +32,12 @@
           <h3 class="card-title">Manage User</h3>
 
           <div class="card-tools">
-            <button type="button" class="btn btn-block btn-primary btn-sm">
+          <a href="<?=BASEURL;?>/User/formcreate">  
+          <button type="button" class="btn btn-block btn-primary btn-sm">
+              
               <i class="fas fa-plus"> Create</i>
             </button>
+            </a>
           </div>
         </div>
         <div class="card-body">
@@ -69,7 +72,19 @@
                     <td><?=$u['alamat'];?></td>
                     <td><?=$u['email'];?></td>
                     <td><?=$u['nohp'];?></td>
-                    <td>action</td>
+                    <td>
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-success">Action</button>
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Update</a>
+                      <a class="dropdown-item" href="#">Delete</a>
+                      <a class="dropdown-item" href="#">Detail</a>
+                    </div>
+                  </div>
+                    </td>
                   </tr>
                   <?php
                   endforeach;
