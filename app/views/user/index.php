@@ -29,19 +29,66 @@
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Title</h3>
+          <h3 class="card-title">Manage User</h3>
 
           <div class="card-tools">
-            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-              <i class="fas fa-minus"></i>
-            </button>
-            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-              <i class="fas fa-times"></i>
+            <button type="button" class="btn btn-block btn-primary btn-sm">
+              <i class="fas fa-plus"> Create</i>
             </button>
           </div>
         </div>
         <div class="card-body">
-          Start creating your amazing application!
+        
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>Nomor Induk</th>
+                    <th>Nama User</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Tempat & tanggal lahir</th>
+                    <th>Alamat</th>
+                    <th>E-mail</th>
+                    <th>Nomor HP</th>
+                    <th>aksi</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    <?php
+                    $no=0;
+                    foreach($data['users'] as $u):
+                    $no++;
+                    $ttl = $u['tpt_lahir'].", ".$u['tgl_lahir'];
+                    ?>
+                  <tr>
+                    <td><?=$no?></td>
+                    <td><?=$u['no_induk'];?></td>
+                    <td><?=$u['nama'];?></td>
+                    <td><?=$u['jk'];?></td>
+                    <td><?=$ttl;?></td>
+                    <td><?=$u['alamat'];?></td>
+                    <td><?=$u['email'];?></td>
+                    <td><?=$u['nohp'];?></td>
+                    <td>action</td>
+                  </tr>
+                  <?php
+                  endforeach;
+                  ?>
+                  </tbody>
+                  <tfoot>
+                  <tr>
+                    <th>No.</th>
+                    <th>Nomor Induk</th>
+                    <th>Nama User</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Tempat & tanggal lahir</th>
+                    <th>Alamat</th>
+                    <th>E-mail</th>
+                    <th>Nomor HP</th>
+                    <th>aksi</th>
+                  </tr>
+                  </tfoot>
+                </table>
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
