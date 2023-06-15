@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Log in (v2)</title>
+  <title>Login Eskul</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -44,7 +44,7 @@
         <div class="row d-flex justify-content-center mt-5 mb-5">
           <!-- /.col -->
           <div class="col-7">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <button type="submit" name="simpan" class="btn btn-primary btn-block">Sign In</button>
           </div>
           <!-- /.col -->
         </div>

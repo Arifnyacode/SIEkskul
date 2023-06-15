@@ -2,7 +2,7 @@
 
 class App
 {
-	protected $controller = 'Login'; //controller default
+	protected $controller = 'tentang'; //controller default
 	protected $method = 'index'; // method default
 	protected $params = []; // pramater default bisa lebih dari satu
 

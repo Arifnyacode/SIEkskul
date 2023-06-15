@@ -174,13 +174,13 @@
           
           <ul class="nav nav-treeview">
           <li class="nav-item">
-                  <a href="<?= BASEURL; ?>/Login" class="nav-link">
+                  <a href="<?= BASEURL; ?>/tentang" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>User</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="<?php echo(BASEURL); ?>/About" class="nav-link">
+                  <a href="<?= BASEURL; ?>/tentang/tes" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Siswa</p>
                   </a>
