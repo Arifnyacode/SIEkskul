@@ -8,7 +8,9 @@
  <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
+    <?php Flasher::flash(); ?>
       <div class="container-fluid">
+      
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1>Manage User Page</h1>
@@ -79,9 +81,9 @@
                       <span class="sr-only">Toggle Dropdown</span>
                     </button>
                     <div class="dropdown-menu" role="menu">
-                      <a class="dropdown-item" href="#">Update</a>
-                      <a class="dropdown-item" href="#">Delete</a>
-                      <a class="dropdown-item" href="#">Detail</a>
+                      <a class="dropdown-item" href="<?=BASEURL;?>/user/update">Update</a>
+                      <a class="dropdown-item" href="<?=BASEURL;?>/user/delete/<?=$u['IdUser'];?>">Delete</a>
+                      <a class="dropdown-item" href="<?=BASEURL;?>/user/detail/<?=$u['IdUser'];?>">Detail</a>
                     </div>
                   </div>
                     </td>
