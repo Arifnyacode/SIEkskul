@@ -30,8 +30,11 @@
 <script src="<?= BASEURL; ?>/dist/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?= BASEURL; ?>/dist/js/demo.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="<?= BASEURL; ?>/dist/js/pages/dashboard.js"></script>
+
+<!-- SweetAlert2 -->
+<script src="<?= BASEURL; ?>/plugins/sweetalert2/sweetalert2.min.js"></script>
+<!-- Toastr -->
+<script src="<?= BASEURL; ?>/plugins/toastr/toastr.min.js"></script>
 <!-- DataTables  & Plugins -->
 <script src="<?=BASEURL;?>/plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="<?=BASEURL;?>/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -62,5 +65,6 @@
     });
   });
 </script>
+
 </body>
 </html>
